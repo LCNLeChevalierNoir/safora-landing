@@ -141,7 +141,7 @@ h2.sec-title{
 .btn.outline{ background:transparent; border-color:#b5b3a8; color:var(--ink); }
 .btn.outline:hover{ border-color:var(--ink); }
 .btn.outline.on-shell{ border-color:var(--shell-line); color:var(--shell-ivory); }
-.btn.outline.on-shell:hover{ border-color:var(--shell-ivory); }
+.btn.outline.on-shell:hover{ background:transparent; border-color:var(--shell-ivory); color:var(--shell-ivory); }
 .btn.sm{ padding:9px 16px; font-size:13px; }
 
 .tlink{
