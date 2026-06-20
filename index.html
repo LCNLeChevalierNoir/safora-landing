@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Safora — Know the true state of every repo</title>
 <meta name="description" content="Safora is the autonomous design-system governance instrument. It audits every repo against your Knowledge Pack, opens small reviewable fix PRs, and never moves a score on a promise.">
-<!-- Config: APP_SLUG=TODO; INSTALL_URL=#install until the GitHub App slug is live -->
+<!-- Public CTA exposure is controlled by SAFORA_LANDING_CONFIG near the footer script. -->
 <link rel="stylesheet" href="landing.css">
 </head>
 <body>
@@ -31,10 +31,11 @@
       <a href="#pricing">Pricing</a>
     </nav>
     <div class="nav-right">
-      <a class="signin" href="https://app.safora.run">Sign in</a>
-      <a id="navInstall" class="btn outline on-shell" href="#install">
-        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="3.8" r="1.8"></circle><circle cx="4.5" cy="12.2" r="1.8"></circle><circle cx="11.5" cy="3.8" r="1.8"></circle><path d="M4.5 5.6v4.8M11.5 5.6v1a3 3 0 0 1-3 3H7"></path></svg>
-        Install on GitHub
+      <a class="signin" href="https://app.safora.run" data-auth-cta="signin" hidden>Sign in</a>
+      <a class="signin" href="https://app.safora.run" data-auth-cta="signup" hidden>Sign up</a>
+      <a id="navInstall" class="btn outline on-shell" href="https://tally.so/r/KYOor8" data-platform-button data-install-label="Install on GitHub">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10"></path><path d="m9 4 4 4-4 4"></path></svg>
+        <span>Join the beta</span>
       </a>
     </div>
   </div>
@@ -50,9 +51,9 @@
       <h1 class="display">Know the true state<br>of every repo.</h1>
       <p class="hero-sub">Safora audits every repository against your design system, opens small reviewable fix PRs, and reconciles with GitHub. A score never moves until a re-audit confirms it — so what you read is what is true.</p>
       <div class="hero-cta">
-        <a id="heroInstall" class="btn on-shell" href="#install">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="3.8" r="1.8"></circle><circle cx="4.5" cy="12.2" r="1.8"></circle><circle cx="11.5" cy="3.8" r="1.8"></circle><path d="M4.5 5.6v4.8M11.5 5.6v1a3 3 0 0 1-3 3H7"></path></svg>
-          Install on GitHub
+        <a id="heroInstall" class="btn on-shell" href="https://tally.so/r/KYOor8" data-platform-button data-install-label="Install on GitHub">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10"></path><path d="m9 4 4 4-4 4"></path></svg>
+          <span>Join the beta</span>
         </a>
         <a class="tlink on-shell" href="#loop">See how the loop works</a>
       </div>
@@ -442,9 +443,9 @@
         <h2 class="sec-title">Every change is a pull request.<br>Nothing merges itself.</h2>
         <p class="lead">Safora is autonomous in its measuring and proposing — and deliberately powerless at the moment that matters. It never auto-merges, never pushes to a default branch, and never applies a Knowledge Pack change without your approval. Powerful automation, human control.</p>
         <div class="safety-cta">
-          <a class="btn on-shell" href="#install">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="3.8" r="1.8"></circle><circle cx="4.5" cy="12.2" r="1.8"></circle><circle cx="11.5" cy="3.8" r="1.8"></circle><path d="M4.5 5.6v4.8M11.5 5.6v1a3 3 0 0 1-3 3H7"></path></svg>
-            Install on GitHub
+          <a class="btn on-shell" href="https://tally.so/r/KYOor8" data-platform-button data-install-label="Install on GitHub">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10"></path><path d="m9 4 4 4-4 4"></path></svg>
+            <span>Join the beta</span>
           </a>
           <a class="tlink on-shell" href="#pack">How the Knowledge Pack works</a>
         </div>
@@ -607,17 +608,17 @@
 <section class="section final" id="install">
   <span class="js-fan final-fan" data-size="640" data-stroke="rgba(251,249,242,.13)"></span>
   <div class="wrap">
-    <span class="eyebrow" style="color:var(--shell-sub)">Install the instrument</span>
-    <h2 class="sec-title">Know the true state of every repo.</h2>
-    <p class="lead">Connect a GitHub organization, extract your design system into a Knowledge Pack, and let the first audit run. No score will move until a re-audit confirms it.</p>
+    <span class="eyebrow" style="color:var(--shell-sub)" data-final-eyebrow>Private beta</span>
+    <h2 class="sec-title" data-final-heading>Join the Safora beta.</h2>
+    <p class="lead" data-final-copy>Safora is opening access in small pilot cohorts. Tell us about your design system and repos, and we will follow up with the right beta path.</p>
     <div class="final-cta">
-      <a class="btn on-shell" href="#install">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="3.8" r="1.8"></circle><circle cx="4.5" cy="12.2" r="1.8"></circle><circle cx="11.5" cy="3.8" r="1.8"></circle><path d="M4.5 5.6v4.8M11.5 5.6v1a3 3 0 0 1-3 3H7"></path></svg>
-        Install on GitHub
+      <a class="btn on-shell" href="https://tally.so/r/KYOor8" data-platform-button data-install-label="Install on GitHub">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10"></path><path d="m9 4 4 4-4 4"></path></svg>
+        <span>Join the beta</span>
       </a>
       <a class="tlink on-shell" href="#loop">Read the governance loop</a>
     </div>
-    <p class="final-note">One org per GitHub organization · Safora never auto-merges and never pushes to a default branch.</p>
+    <p class="final-note" data-final-note>We will reply with setup details. Safora never auto-merges and never pushes to a default branch.</p>
   </div>
 </section>
 
@@ -647,14 +648,15 @@
       </div>
       <div class="footer-col">
         <h4>Resources</h4>
-        <a href="#">Documentation</a>
-        <a href="#">Status</a>
-        <a href="#install">GitHub</a>
+        <a href="#" hidden>Documentation</a>
+        <a href="#" hidden>Status</a>
+        <a href="https://tally.so/r/KYOor8" data-platform-text-link data-beta-label="Beta access" data-install-label="GitHub">Beta access</a>
       </div>
       <div class="footer-col">
         <h4>Start</h4>
-        <a href="#install">Install on GitHub</a>
-        <a href="https://app.safora.run">Sign in</a>
+        <a href="https://tally.so/r/KYOor8" data-platform-text-link data-beta-label="Join the beta" data-install-label="Install on GitHub">Join the beta</a>
+        <a href="https://app.safora.run" data-auth-cta="signin" hidden>Sign in</a>
+        <a href="https://app.safora.run" data-auth-cta="signup" hidden>Sign up</a>
       </div>
     </div>
   </div>
@@ -668,8 +670,81 @@
 </main>
 
 <script>
+var SAFORA_LANDING_CONFIG = {
+  showPublicAuthAndGitHubCtas: false,
+  betaSignupUrl: 'https://tally.so/r/KYOor8',
+  githubInstallUrl: '#install',
+  signInUrl: 'https://app.safora.run',
+  signUpUrl: 'https://app.safora.run',
+  copy: {
+    beta: {
+      eyebrow: 'Private beta',
+      heading: 'Join the Safora beta.',
+      body: 'Safora is opening access in small pilot cohorts. Tell us about your design system and repos, and we will follow up with the right beta path.',
+      note: 'Beta signup runs through Tally. Safora never auto-merges and never pushes to a default branch.'
+    },
+    publicPlatform: {
+      eyebrow: 'Install the instrument',
+      heading: 'Know the true state of every repo.',
+      body: 'Connect a GitHub organization, extract your design system into a Knowledge Pack, and let the first audit run. No score will move until a re-audit confirms it.',
+      note: 'One org per GitHub organization · Safora never auto-merges and never pushes to a default branch.'
+    }
+  }
+};
+
 /* ---- radial fan motif (line-art), generated to match the product FanDeco ---- */
 (function () {
+  var config = window.SAFORA_LANDING_CONFIG || {};
+  var betaLabel = 'Join the beta';
+  var betaIcon = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10"></path><path d="m9 4 4 4-4 4"></path></svg>';
+  var githubIcon = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.5" cy="3.8" r="1.8"></circle><circle cx="4.5" cy="12.2" r="1.8"></circle><circle cx="11.5" cy="3.8" r="1.8"></circle><path d="M4.5 5.6v4.8M11.5 5.6v1a3 3 0 0 1-3 3H7"></path></svg>';
+
+  function setExternalLink(el, href) {
+    el.href = href;
+    if (/^https?:\/\//.test(href) && !href.includes('safora.run')) {
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
+    } else {
+      el.removeAttribute('target');
+      el.removeAttribute('rel');
+    }
+  }
+
+  function applyLandingCtaConfig() {
+    var showPublicPlatformCtas = config.showPublicAuthAndGitHubCtas === true;
+    var modeCopy = showPublicPlatformCtas ? config.copy.publicPlatform : config.copy.beta;
+
+    document.querySelectorAll('[data-platform-button]').forEach(function (el) {
+      var label = showPublicPlatformCtas ? el.dataset.installLabel : betaLabel;
+      setExternalLink(el, showPublicPlatformCtas ? config.githubInstallUrl : config.betaSignupUrl);
+      el.innerHTML = (showPublicPlatformCtas ? githubIcon : betaIcon) + '<span>' + label + '</span>';
+    });
+
+    document.querySelectorAll('[data-platform-text-link]').forEach(function (el) {
+      var label = showPublicPlatformCtas ? el.dataset.installLabel : el.dataset.betaLabel;
+      el.textContent = label;
+      setExternalLink(el, showPublicPlatformCtas ? config.githubInstallUrl : config.betaSignupUrl);
+    });
+
+    document.querySelectorAll('[data-auth-cta]').forEach(function (el) {
+      var href = el.dataset.authCta === 'signup' ? config.signUpUrl : config.signInUrl;
+      el.hidden = !showPublicPlatformCtas || !href;
+      if (href) setExternalLink(el, href);
+    });
+
+    var finalEyebrow = document.querySelector('[data-final-eyebrow]');
+    var finalHeading = document.querySelector('[data-final-heading]');
+    var finalCopy = document.querySelector('[data-final-copy]');
+    var finalNote = document.querySelector('[data-final-note]');
+    if (finalEyebrow) finalEyebrow.textContent = modeCopy.eyebrow;
+    if (finalHeading) finalHeading.textContent = modeCopy.heading;
+    if (finalCopy) finalCopy.textContent = modeCopy.body;
+    if (finalNote) finalNote.textContent = modeCopy.note;
+  }
+
+  window.applySaforaLandingConfig = applyLandingCtaConfig;
+  applyLandingCtaConfig();
+
   function buildFan(el) {
     var size = +el.dataset.size || 360;
     var stroke = el.dataset.stroke || '#1B1A16';
