@@ -48,15 +48,14 @@ Contraintes :
 - Garder le responsive existant et le support prefers-reduced-motion.
 - Conserver la charte : un seul accent orange, fond shell sombre, papier greige.
 
-Modification fonctionnelle — exposition des CTA publics :
-- Garder `SAFORA_LANDING_CONFIG.showPublicAuthAndGitHubCtas` à `false` par défaut.
-- Quand le flag est désactivé, masquer Sign in / Sign up / Install on GitHub et afficher
-  "Join the beta" vers :
-    https://tally.so/r/KYOor8
-- Quand le flag est activé, restaurer les liens publics d'authentification et les CTA
-  "Install on GitHub".
-- Garder l'URL GitHub App centralisée dans `SAFORA_LANDING_CONFIG.githubInstallUrl`
-  (`#install` jusqu'à ce que le slug de la GitHub App existe).
+Modification fonctionnelle — exposition self-serve :
+- Garder `SAFORA_LANDING_CONFIG.showPublicAuthAndGitHubCtas` à `true` par défaut.
+- Exposer Sign in / Sign up et faire pointer les CTA principaux vers :
+    https://app.safora.run/sign-up
+- Garder l'ancien lien beta Tally dans `SAFORA_LANDING_CONFIG.betaSignupUrl` uniquement
+  comme fallback si le flag est remis à `false`.
+- Remplacer la surface publique "Join the beta" par "Start free" sans introduire
+  de CTA GitHub séparé sur la landing.
 
 Polices — auto-héberger au lieu de Google Fonts (supprime la dernière dépendance externe) :
 - Supprimer les <link> vers fonts.googleapis.com / fonts.gstatic.com et les preconnect.
@@ -95,17 +94,15 @@ Déploiement :
 
 ## 5. Public CTA exposure
 
-Public auth and GitHub-install CTAs are gated by `SAFORA_LANDING_CONFIG.showPublicAuthAndGitHubCtas`
+Public auth and platform-start CTAs are gated by `SAFORA_LANDING_CONFIG.showPublicAuthAndGitHubCtas`
 near the bottom of `index.html`.
 
-Default public behaviour keeps that flag `false`: Sign in, Sign up, and Install on GitHub
-are not exposed, and the primary CTA is "Join the beta" linking to:
+Default public behaviour keeps that flag `true`: Sign in and Sign up are exposed, and
+the primary CTA is "Start free" linking to:
 
 ```txt
-https://tally.so/r/KYOor8
+https://app.safora.run/sign-up
 ```
 
-When the flag is set to `true`, the landing page restores the public auth links and the
-Install on GitHub CTAs. The GitHub install URL remains centralized as
-`SAFORA_LANDING_CONFIG.githubInstallUrl`; until the GitHub App slug exists, it stays as
-`#install`.
+When the flag is set to `false`, the landing page falls back to the private-beta copy and
+uses `SAFORA_LANDING_CONFIG.betaSignupUrl` for "Join the beta".

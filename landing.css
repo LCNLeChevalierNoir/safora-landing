@@ -185,8 +185,8 @@ h2.sec-title{
 .nav-right .signin{ font-size:13.5px; color:var(--shell-sub); }
 .nav-right .signin:hover{ color:var(--shell-ivory); }
 /* header CTA promotes to primary once the hero CTA scrolls out of view */
-#navInstall.is-primary{ background:var(--ivory); color:var(--ink); border-color:var(--ivory); }
-#navInstall.is-primary:hover{ background:#fff; }
+#navStart.is-primary{ background:var(--ivory); color:var(--ink); border-color:var(--ivory); }
+#navStart.is-primary:hover{ background:#fff; }
 
 /* ============================================================
    HERO  (shell)
