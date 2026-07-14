@@ -599,7 +599,10 @@ h2.sec-title{
   :root{ --gutter:20px; }
   body{ font-size:15px; }
   .nav .wrap{ height:60px; gap:14px; }
+  .brand{ gap:9px; }
+  .brand .word{ font-size:13px; letter-spacing:.22em; }
   .nav-menu-toggle{ width:38px; height:38px; }
+  #navStart{ padding:11px 17px; }
   .nav-menu-panel{ grid-template-columns:1fr; right:0; left:0; border-radius:0; }
   .pad{ padding-top:72px; padding-bottom:72px; }
   .pad-sm{ padding-top:56px; padding-bottom:56px; }
@@ -639,11 +642,10 @@ h2.sec-title{
 }
 
 @media (max-width:600px){
-  .nav .wrap{ gap:10px; justify-content:space-between; }
-  .brand{ flex:none; }
-  .brand svg{ width:30px; height:33px; }
+  .nav .wrap{ gap:10px; }
   .brand .word{ display:none; }
-  .nav-right{ margin-left:0; gap:8px; flex:none; }
+  .nav-right{ gap:8px; }
+  #navStart{ padding:10px 14px; }
 }
 
 @media (prefers-reduced-motion:no-preference){
