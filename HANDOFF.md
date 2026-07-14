@@ -50,7 +50,7 @@ Contraintes :
 
 Modification fonctionnelle — exposition self-serve :
 - Garder `SAFORA_LANDING_CONFIG.showPublicAuthAndGitHubCtas` à `true` par défaut.
-- Exposer Sign in / Sign up et faire pointer les CTA principaux vers :
+- Exposer Sign in et faire pointer l'unique CTA de création de compte vers :
     https://app.safora.run/sign-up
 - Garder l'ancien lien beta Tally dans `SAFORA_LANDING_CONFIG.betaSignupUrl` uniquement
   comme fallback si le flag est remis à `false`.
@@ -97,8 +97,8 @@ Déploiement :
 Public auth and platform-start CTAs are gated by `SAFORA_LANDING_CONFIG.showPublicAuthAndGitHubCtas`
 near the bottom of `index.html`.
 
-Default public behaviour keeps that flag `true`: Sign in and Sign up are exposed, and
-the primary CTA is "Start free" linking to:
+Default public behaviour keeps that flag `true`: Sign in is exposed, and the primary
+account-creation CTA is "Start free" linking to:
 
 ```txt
 https://app.safora.run/sign-up
