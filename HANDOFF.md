@@ -56,6 +56,8 @@ Modification fonctionnelle — exposition self-serve :
   comme fallback si le flag est remis à `false`.
 - Remplacer la surface publique "Join the beta" par "Start free" sans introduire
   de CTA GitHub séparé sur la landing.
+- Sur mobile et paysage étroit, garder `Start free` visible dans le header et déplacer
+  les liens de navigation ainsi que `Sign in` dans un menu hamburger.
 
 Polices — auto-héberger au lieu de Google Fonts (supprime la dernière dépendance externe) :
 - Supprimer les <link> vers fonts.googleapis.com / fonts.gstatic.com et les preconnect.
@@ -106,3 +108,8 @@ https://app.safora.run/sign-up
 
 When the flag is set to `false`, the landing page falls back to the private-beta copy and
 uses `SAFORA_LANDING_CONFIG.betaSignupUrl` for "Join the beta".
+
+Responsive navigation: desktop keeps the full nav. At tablet/mobile widths, the
+header keeps the brand and "Start free" CTA visible, while "How it works",
+"Honest score", "Safety", "Knowledge Pack", "Pricing", and "Sign in" move into
+the hamburger menu.
